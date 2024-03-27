@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>basic calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <input type="text" placeholder="0" id="result">
+        <div id="clear" onclick="answer='';document.querySelector('#result').value=answer;">C</div>
+        <div class="number" onclick="answer+='1';document.querySelector('#result').value=answer;">1</div>
+        <div class="number" onclick="answer+='2';document.querySelector('#result').value=answer;">2</div>
+        <div class="number" onclick="answer+='3';document.querySelector('#result').value=answer;">3</div>
+        <div class="number" onclick="answer+='4';document.querySelector('#result').value=answer;">4</div>
+        <div class="number" onclick="answer+='5';document.querySelector('#result').value=answer;">5</div>
+        <div class="number" onclick="answer+='6';document.querySelector('#result').value=answer;">6</div>
+        <div class="number" onclick="answer+='7';document.querySelector('#result').value=answer;">7</div>
+        <div class="number" onclick="answer+='8';document.querySelector('#result').value=answer;">8</div>
+        <div class="number" onclick="answer+='9';document.querySelector('#result').value=answer;">9</div>
+        <div class="number" onclick="answer+='0';document.querySelector('#result').value=answer;">0</div>
+        <div id="point" class="number" onclick="answer+='.';document.querySelector('#result').value=answer;">.</div>
+        <div class="operator" onclick="answer+='+';document.querySelector('#result').value=answer;">+</div>
+        <div class="operator" onclick="answer+='-';document.querySelector('#result').value=answer;">-</div>
+        <div class="operator" onclick="answer+='*';document.querySelector('#result').value=answer;">&times;</div>
+        <div class="operator" onclick="answer+='/';document.querySelector('#result').value=answer;">&divide;</div>
+        <div class="operator" onclick="document.querySelector('#result').value=eval(answer);">=</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
